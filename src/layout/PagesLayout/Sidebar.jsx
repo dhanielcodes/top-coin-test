@@ -24,13 +24,16 @@ const Sidebar = () => {
               <AiOutlinePoweroff size={20} style={{ color: "#9e5f6f" }} />
             </span>
           </div>
-          <div className="linksWrapper">
-            <Link to="/dashboard">Dashboard</Link>
-            <Link to="/deposit">Deposit</Link>
-            <Link to="/withdraw">Withdraw</Link>
-            <a href="#">Security</a>
-            <a href="#">Referrals</a>
-            <a href="#">Banners</a>
+          <div className="linksWrapper" style={{ color: "#fff" }}>
+            <Link style={{ color: "#fff" }} to="/dashboard">
+              Dashboard
+            </Link>
+            <Link style={{ color: "#fff" }} to="/deposit">
+              Deposit
+            </Link>
+            <Link style={{ color: "#fff" }} to="/withdraw">
+              Withdraw
+            </Link>
           </div>
         </div>
       </SecondPart>
@@ -56,7 +59,7 @@ const FirstPart = styled.div`
   }
 `;
 const SecondPart = styled.div`
-  background: #9e5f6f;
+  background: #ab3e5b;
   height: 100%;
 
   .sidebarBody {
