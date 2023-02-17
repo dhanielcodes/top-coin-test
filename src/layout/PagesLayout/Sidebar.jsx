@@ -2,8 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { AiOutlineEdit, AiOutlinePoweroff } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+// import { authActions } from "../../../redux/red  ucers/authSlice";
 
 const Sidebar = () => {
+  const navigate = useNavigate();
   return (
     <Container>
       <FirstPart>
@@ -97,7 +101,7 @@ const SecondPart = styled.div`
         border-bottom: 1px dotted;
         text-decoration: none;
         color: #000;
-        padding: 9px 0 9px 50px;
+        padding: 20px 0 20px 50px;
         font-weight: 600;
       }
     }
